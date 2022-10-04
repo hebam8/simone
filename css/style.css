@@ -93,11 +93,11 @@ section{
  /* --------for nav response------ */
  .menu-nav{
   display: none;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   cursor: pointer;
  }
  #check{
-  appearance: none;
+appearance: none;
  }
 nav {
   background-color: #0d0d0e;
@@ -764,13 +764,17 @@ nav ul a {
   :root{
     font-size: 11px;
   }
-
+nav{
+  height: 80px;
+}
   .menu-nav{
     display: block;
   }
-  #check:checked + ul{
+  #check:checked  + ul {
     display: flex;
+ 
   }
+
   nav ul {
     flex-direction: column;
     width: 100%;
@@ -781,7 +785,7 @@ nav ul a {
  nav ul li {
   width: 100%;
 }
-nav ul a {
+nav ul li a {
   display: block;
   text-align: center;
   background-color: #fff;
@@ -799,5 +803,8 @@ nav ul a {
  }
  .resume .resume-content :is(.left,.right),.resume .skills {
   text-align: center;
+ }
+ footer{
+  justify-content: center;
  }
 }
