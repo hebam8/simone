@@ -96,7 +96,7 @@ section{
   font-size: 1.9rem;
   cursor: pointer;
  }
- #check{
+ #menu{
 appearance: none;
  }
 nav {
@@ -761,6 +761,9 @@ nav ul a {
 }
 
 @media (max-width: 575.98px){
+  nav ul li {
+    margin-left: 0;
+  }
   :root{
     font-size: 11px;
   }
@@ -770,9 +773,8 @@ nav{
   .menu-nav{
     display: block;
   }
-  #check:checked  + ul {
+  #menu:checked + ul {
     display: flex;
- 
   }
 
   nav ul {
